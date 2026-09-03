@@ -8,9 +8,14 @@ Det här är inte elhandel, inte investeringsråd och inte godkänt av Energimar
 
 ## GitHub Pages
 
-Live-URL: https://drlipton.github.io/elpris-se/
+Mål-URL: https://drlipton.github.io/elpris-se/
 
 Källan är grenen `main`, sökväg `/`. Filen `.nojekyll` gör att GitHub Pages inte kör Jekyll.
+
+API-anropet `POST /repos/drlipton/elpris-se/pages` (branch `main`, path `/`) returnerar **403 Resource not accessible by integration**. Samma fel kommer med Cursor-token, git-push-token och `GITHUB_TOKEN` i Actions. GitHub tillåter inte att en integration skapar Pages-sajten; det krävs en användartoken eller ett klick i UI.
+
+**Kvarvarande klick (en gång):** [Settings → Pages](https://github.com/drlipton/elpris-se/settings/pages) → Build and deployment → Source → **Deploy from a branch** → Branch **main** / **/** (root) → Save.  
+Alternativ: Source → **GitHub Actions**, sedan kör om flödet *Deploy GitHub Pages*.
 
 ## Filer
 
@@ -34,3 +39,5 @@ Klistra inte in påhittade länkar eller provisionsbelopp. Markera reklam tydlig
 ## Drift
 
 Inget betalt hostingkonto. Bara GitHub Pages från den här publika repot.
+
+Om branch-publicering från `main` inte kan slås på via API används GitHub Actions-flödet i `.github/workflows/pages.yml`.

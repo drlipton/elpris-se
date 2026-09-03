@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tillgänglighetsredogörelse (DOS) — gratis guide för små kommuner — elpris-se</title>
+  <meta name="description" content="Gratis guide till tillgänglighetsredogörelse enligt DOS-lagen: vad redogörelsen måste innehålla, att den ska vara daterad och länkad, och en minimal självkontroll. För små kommuner och offentliga aktörer. Inte Digg, inte tillsyn, inte WCAG-certifiering.">
+  <link rel="canonical" href="https://drlipton.github.io/elpris-se/tillganglighetsredogorelse/">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .disclaimer {
+      background: #fdf1e0;
+      border: 2px solid var(--accent);
+      border-radius: 4px;
+      padding: 1rem 1.1rem;
+      margin: 1rem 0 1.6rem;
+      font-size: 0.95rem;
+    }
+    .disclaimer strong {
+      color: var(--accent);
+    }
+    .back-link {
+      margin: 0.9rem 0 0;
+      font-size: 0.92rem;
+    }
+    .check-list {
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.65rem;
+    }
+    .check-list li {
+      padding: 0.85rem 0.95rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--live);
+    }
+    .check-list strong {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .not-list {
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.65rem;
+    }
+    .not-list li {
+      padding: 0.85rem 0.95rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--accent);
+    }
+    .sources ul {
+      margin: 0.5rem 0 1rem;
+      padding-left: 1.2rem;
+    }
+    .sources li {
+      margin-bottom: 0.45rem;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#innehall">Hoppa till innehåll</a>
+
+  <header class="top">
+    <p class="brand"><a href="../index.html">elpris-se</a></p>
+    <p class="brand-note">Gratis guide · inte Digg · inte tillsyn · inte rådgivning</p>
+  </header>
+
+  <main id="innehall">
+    <p class="back-link"><a href="../index.html">← Tillbaka till elpris-se</a></p>
+
+    <div class="disclaimer">
+      <strong>Viktigt:</strong> Den här sidan drivs inte av Digg (Myndigheten för digital förvaltning)
+      och är inte tillsyn. Innehållet är inte juridisk rådgivning och ersätter inte lagen,
+      föreskrifter eller Diggs egna sidor. Inget vitebelopp anges här — Digg beslutar om
+      föreläggande och vite i enskilda ärenden. Guider som denna är inte full WCAG-certifiering
+      och gör inte er webbplats förenlig med DOS-lagen. Kontrollera alltid Diggs och
+      lagtextens levande sidor innan ni agerar. Författare: Joel Smith.
+    </div>
+
+    <section class="hero">
+      <p class="kicker">DOS-LAGEN · TILLGÄNGLIGHETSREDOGÖRELSE</p>
+      <h1>Tillgänglighetsredogörelse — gratis guide för små kommuner och offentliga aktörer</h1>
+      <p class="lede">
+        En kort, gratis översikt av vad en tillgänglighetsredogörelse enligt lagen om
+        tillgänglighet till digital offentlig service (DOS-lagen) ska innehålla, att den
+        ska vara daterad och lätt att hitta, och hur ni kan göra en minimal självkontroll.
+        Kontrollerat mot Digg och lagtext 3 september 2026.
+      </p>
+    </section>
+
+    <section class="zones" aria-labelledby="vad-rubrik">
+      <h2 id="vad-rubrik">Vad är det — och varför?</h2>
+      <p>
+        Enligt 13 § DOS-lagen ska en offentlig aktör tillhandahålla en
+        tillgänglighetsredogörelse för digital service som omfattas av tillgänglighetskraven.
+        Digg beskriver den som en presentation av hur väl den digitala servicen uppfyller
+        lagens krav, vilka kända brister som finns, och hur användaren kan påtala brister
+        eller anmäla till Digg.
+      </p>
+      <p>
+        Digg skriver uttryckligen att alla webbplatser och mobila applikationer som omfattas
+        ska ha en redogörelse — även (och särskilt) när de inte är tillgängliga. Redogörelsen
+        ska spegla den aktuella tillgängligheten. Den ska inte skickas in till Digg.
+      </p>
+    </section>
+
+    <section class="zones" aria-labelledby="innehall-rubrik">
+      <h2 id="innehall-rubrik">Vad måste redogörelsen innehålla?</h2>
+      <p>
+        Innehållskraven finns i Diggs föreskrifter (MDFFS 2019:2) 6 § och sammanfattas på
+        Diggs sida &quot;Skapa en tillgänglighetsredogörelse&quot;. Kort sagt ska redogörelsen
+        bland annat innehålla:
+      </p>
+      <ol class="zone-list">
+        <li>
+          <span class="zone-code">1</span>
+          <span class="zone-name">Aktör och tjänst</span>
+          <span class="zone-desc">Namn på den offentliga aktören samt webbplats(er) eller app(ar) som redogörelsen gäller.</span>
+        </li>
+        <li>
+          <span class="zone-code">2</span>
+          <span class="zone-name">Status: helt / delvis / inte</span>
+          <span class="zone-desc">Om servicen som helhet är helt, delvis eller inte förenlig med kraven som följer av DOS-lagen.</span>
+        </li>
+        <li>
+          <span class="zone-code">3</span>
+          <span class="zone-name">Otillgängligt innehåll</span>
+          <span class="zone-desc">Detaljerad förteckning över innehåll som inte är tillgängligt, skälen till det, och tillgängliga alternativ om sådana finns.</span>
+        </li>
+        <li>
+          <span class="zone-code">4</span>
+          <span class="zone-name">Datum och metod</span>
+          <span class="zone-desc">Datum för bedömningen, utvärderingsmetod (egen granskning eller extern), samt datum för senaste uppdatering.</span>
+        </li>
+        <li>
+          <span class="zone-code">5</span>
+          <span class="zone-name">Meddelandefunktion</span>
+          <span class="zone-desc">Funktion (eller länk till sådan) där användaren kan påtala brister och begära tillgängliggörande av undantaget innehåll. Digg: telefon/e-post räcker inte ensamma — till exempel ett formulär behövs.</span>
+        </li>
+        <li>
+          <span class="zone-code">6</span>
+          <span class="zone-name">Anmälan till Digg</span>
+          <span class="zone-desc">Information om att upplevd brist kan anmälas till Digg, med länk till Diggs anmälningsfunktion (digg.se/tdosanmalan).</span>
+        </li>
+        <li>
+          <span class="zone-code">7</span>
+          <span class="zone-name">Oskäligt betungande (om ni åberopar det)</span>
+          <span class="zone-desc">Om ni bedömer att kravet är oskäligt betungande enligt 12 § ska den bedömningen återges i redogörelsen (13 §).</span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="zones" aria-labelledby="lank-rubrik">
+      <h2 id="lank-rubrik">Den måste vara lätt att hitta — och daterad</h2>
+      <p>
+        Digg och föreskrifterna kräver att redogörelsen publiceras i ett tillgängligt format.
+        Digg rekommenderar som utgångspunkt en tillgänglig webbsida.
+      </p>
+      <p>
+        <strong>Länk på webbplats:</strong> En länk till tillgänglighetsredogörelsen ska vara
+        tydligt presenterad på webbplatsens startsida, alternativt finnas åtkomlig från alla
+        sidor — till exempel i en sidfot. Att bara nå redogörelsen via en dold undermeny
+        eller en sida &quot;Om webbplatsen&quot; utan länk från start eller sidfot uppfyller
+        inte Diggs formulering om startsida eller länk från alla sidor.
+      </p>
+      <p>
+        <strong>Datum:</strong> Ange både bedömningsdatum (när utvärderingen som ligger till
+        grund för redogörelsen gjordes) och datum för senaste uppdatering. Digg hänvisar till
+        att uppgifterna rekommenderas ses över minst en gång om året. En odaterad redogörelse
+        gör det omöjligt för användaren att bedöma hur aktuell informationen är.
+      </p>
+      <p>
+        Diggs uppfattning är också att användare ska kunna läsa redogörelsen utan att först
+        logga in.
+      </p>
+    </section>
+
+    <section class="prices" aria-labelledby="check-rubrik">
+      <h2 id="check-rubrik">Minimal självkontroll (checklista)</h2>
+      <p>
+        Detta är en snabb, manuell självkontroll — inte Digg-tillsyn och inte en full
+        WCAG-granskning. Gå igenom er egen startsida och redogörelsesida:
+      </p>
+      <ul class="check-list">
+        <li>
+          <strong>Finns en tillgänglighetsredogörelse över huvud taget?</strong>
+          Om nej: skapa och publicera en enligt Diggs mall innan ni går vidare.
+        </li>
+        <li>
+          <strong>Finns länk från startsidan eller i sidfoten på alla sidor?</strong>
+          Digg: startsida, alternativt åtkomlig från alla sidor (t.ex. sidfot).
+        </li>
+        <li>
+          <strong>Står statusen helt / delvis / inte förenlig?</strong>
+          En av dessa tre formuleringar ska användas för webbplatsen eller appen som helhet.
+        </li>
+        <li>
+          <strong>Finns bedömningsdatum och uppdateringsdatum?</strong>
+          Båda ska anges, plus vilken metod som använts (egen eller extern granskning).
+        </li>
+        <li>
+          <strong>Finns en lista över kända brister med skäl?</strong>
+          Detaljerad, fullständig och tydlig — inte bara &quot;vissa PDF:er kan vara otillgängliga&quot;.
+        </li>
+        <li>
+          <strong>Finns en meddelandefunktion (t.ex. formulär)?</strong>
+          Digg: e-post och telefon är bra komplement men inte tillräckliga ensamma.
+        </li>
+        <li>
+          <strong>Finns länk till Diggs anmälan?</strong>
+          Använd Diggs adress: <a href="https://www.digg.se/tdosanmalan">digg.se/tdosanmalan</a>.
+        </li>
+        <li>
+          <strong>Grov PDF-stickprov (valfritt, minimal nivå)</strong>
+          Öppna några publika PDF:er och kolla om text går att markera. Det är inte
+          WCAG-taggning, inte OCR-garanti och inte bevis på AA.
+        </li>
+      </ul>
+    </section>
+
+    <section class="zones" aria-labelledby="inte-rubrik">
+      <h2 id="inte-rubrik">Vad den här guiden inte är</h2>
+      <ul class="not-list">
+        <li><strong>Inte Digg-tillsyn.</strong> Digg övervakar och kan påpeka, förelägga och i vissa fall förena föreläggande med vite. Den här sidan gör inget av det.</li>
+        <li><strong>Inte full WCAG-certifiering.</strong> En redogörelse och en snabb självkontroll säger inte att webbplatsen uppfyller EN 301 549 / WCAG-nivå AA.</li>
+        <li><strong>Inga påhittade vitebelopp.</strong> Lagtexten (19 §) säger att nytt föreläggande får förenas med vite. Belopp beslutas i enskilda ärenden — ange dem inte som generella &quot;standardviten&quot;.</li>
+        <li><strong>Inte ombud i tillsyn.</strong> Guider hjälper er att förstå vad som ska stå i redogörelsen; den företräder er inte mot Digg.</li>
+      </ul>
+    </section>
+
+    <section class="cta sources" aria-labelledby="kallor-rubrik">
+      <h2 id="kallor-rubrik">Källor (kontrollerade 3 september 2026)</h2>
+      <p>Primära källor — läs dem, inte bara den här sammanfattningen:</p>
+      <ul>
+        <li>
+          <a href="https://www.digg.se/kunskap-och-stod/digital-tillganglighet/skapa-en-tillganglighetsredogorelse">
+            Digg: Skapa en tillgänglighetsredogörelse
+          </a>
+          (innehållslista, datum, meddelandefunktion, länkplacering, Word-mallar)
+        </li>
+        <li>
+          <a href="https://www.digg.se/kunskap-och-stod/regler-och-rekommendationer/regler-och-rekommendationer/alla-digitala-tjanster-ska-ha-en-tillganglighetsredogorelse">
+            Digg: Alla digitala tjänster ska ha en tillgänglighetsredogörelse
+          </a>
+          (startsida eller sidfot)
+        </li>
+        <li>
+          <a href="https://www.digg.se/om-oss/forfattningssamling/foreskrifter-om-tillganglighet-till-digital-offentlig-service-mdffs-20192/konsoliderad-version">
+            Digg: MDFFS 2019:2, konsoliderad version — 6 §
+          </a>
+          (föreskrivet innehåll i redogörelsen)
+        </li>
+        <li>
+          <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-20181937-om-tillganglighet-till-digital_sfs-2018-1937/">
+            Lag (2018:1937) om tillgänglighet till digital offentlig service
+          </a>
+          — särskilt 12–13 § (redogörelse, oskäligt betungande) och 16–19 § (tillsyn, föreläggande, vite)
+        </li>
+        <li>
+          <a href="https://www.digg.se/tdosanmalan">Digg: Anmälan om bristande tillgänglighet</a>
+        </li>
+        <li>
+          <a href="https://www.digg.se/kunskap-och-stod/regler-och-rekommendationer/regler-och-rekommendationer/pafoljder-av-att-inte-uppfylla-tillganglighetskraven">
+            Digg: Påföljder av att inte uppfylla tillgänglighetskraven
+          </a>
+          (påpekande → föreläggande → vite — utan fasta belopp på den sidan)
+        </li>
+      </ul>
+      <p class="btn-note">
+        Digg tillhandahåller också Word-mallar för webbplats och app på sidan
+        &quot;Skapa en tillgänglighetsredogörelse&quot;. Använd dem hellre än att skriva från scratch.
+      </p>
+    </section>
+
+    <p class="back-link"><a href="../index.html">← Tillbaka till elpris-se</a></p>
+  </main>
+
+  <footer>
+    <p><strong>Joel Smith</strong>, Sweden</p>
+    <p>Inte Digg. Inte tillsyn. Inte juridisk rådgivning. Inte WCAG-certifiering. Privat informationssida.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tillgänglighetslagen för webbutiker (EAA / lag 2023:254) — gratis guide — elpris-se</title>
+  <meta name="description" content="Gratis översikt av lag (2023:254) och EU:s tillgänglighetsdirektiv (EAA) för svenska e-handelstjänster: vad som omfattas, ikraftträdande 28 juni 2025, och en minimal självkontroll av startsida, produktsida och sök. Inte PTS, inte tillsyn, inte juridisk rådgivning, inte WCAG-certifiering.">
+  <link rel="canonical" href="https://drlipton.github.io/elpris-se/eaa-webbutik/">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .disclaimer {
+      background: #fdf1e0;
+      border: 2px solid var(--accent);
+      border-radius: 4px;
+      padding: 1rem 1.1rem;
+      margin: 1rem 0 1.6rem;
+      font-size: 0.95rem;
+    }
+    .disclaimer strong {
+      color: var(--accent);
+    }
+    .back-link {
+      margin: 0.9rem 0 0;
+      font-size: 0.92rem;
+    }
+    .check-list {
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.65rem;
+    }
+    .check-list li {
+      padding: 0.85rem 0.95rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--live);
+    }
+    .check-list strong {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .not-list {
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.65rem;
+    }
+    .not-list li {
+      padding: 0.85rem 0.95rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--accent);
+    }
+    .sources ul {
+      margin: 0.5rem 0 1rem;
+      padding-left: 1.2rem;
+    }
+    .sources li {
+      margin-bottom: 0.45rem;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#innehall">Hoppa till innehåll</a>
+
+  <header class="top">
+    <p class="brand"><a href="../index.html">elpris-se</a></p>
+    <p class="brand-note">Gratis guide · inte PTS · inte tillsyn · inte rådgivning</p>
+  </header>
+
+  <main id="innehall">
+    <p class="back-link"><a href="../index.html">← Tillbaka till elpris-se</a></p>
+
+    <div class="disclaimer">
+      <strong>Viktigt:</strong> Den här sidan drivs inte av Post- och telestyrelsen (PTS)
+      och är inte tillsyn. Innehållet är inte juridisk rådgivning och ersätter inte lagen,
+      förordningen, PTS föreskrifter eller myndigheternas egna sidor. PTS ger enligt sin
+      egen information inte förhandsbesked eller individuell rådgivning om huruvida en
+      aktör omfattas — det är en bedömning aktören själv behöver göra. Guider som denna
+      är inte full WCAG-certifiering och gör inte er webbutik förenlig med lagen.
+      Inga belopp för sanktionsavgift anges här. Kontrollera alltid de levande sidorna
+      hos PTS, riksdagen och EU innan ni agerar. Författare: Joel Smith.
+    </div>
+
+    <section class="hero">
+      <p class="kicker">LAG 2023:254 · EAA · E-HANDEL</p>
+      <h1>Tillgänglighet i webbutiken — gratis översikt för medelstora e-handlare</h1>
+      <p class="lede">
+        En kort, gratis genomgång av vad lag (2023:254) om vissa produkters och tjänsters
+        tillgänglighet innebär för svenska e-handelstjänster: vad som omfattas på en hög
+        nivå, när kraven började gälla, och hur en minimal självkontroll av startsida,
+        produktsida och sök kan se ut. Kontrollerat mot PTS, riksdagen och EU 3 september 2026.
+      </p>
+    </section>
+
+    <section class="zones" aria-labelledby="vad-rubrik">
+      <h2 id="vad-rubrik">Vad lagen täcker — på en hög nivå</h2>
+      <p>
+        Sverige har genomfört Europaparlamentets och rådets direktiv (EU) 2019/882
+        (tillgänglighetsdirektivet, ofta kallat European Accessibility Act eller EAA)
+        genom lagen (2023:254) och förordningen (2023:676). PTS kallar lagen också
+        tillgänglighetslagen eller LPTT.
+      </p>
+      <p>
+        Det är inte typen av aktör som avgör, utan om ni erbjuder en produkt eller tjänst
+        som räknas upp i lagen och som riktar sig till konsumenter. Bland tjänsterna finns
+        e-handelstjänster. I 2 § definieras de som tjänster som tillhandahålls på distans,
+        genom webbplatser och tjänster för mobila enheter, på elektronisk väg och på
+        individuell begäran av en konsument i syfte att ingå ett konsumentavtal.
+        Direktivet (skäl 43) säger att skyldigheterna gäller internetförsäljning av
+        alla produkter och tjänster.
+      </p>
+      <p>
+        Lagen ställer allmänna tillgänglighetskrav på information, användargränssnitt
+        och funktionell utformning. För webbplatser och appar formuleras det som fyra
+        principer: uppfattningsbar, hanterbar, begriplig och robust. PTS beskriver dem
+        bland annat som textalternativ till bilder, tangentbordsnavigering, tydliga
+        rubriker och felmeddelanden, och att innehållet ska fungera med hjälpmedel
+        såsom skärmläsare. Därtill finns kompletterande krav för e-handelstjänster.
+      </p>
+      <p>
+        <strong>Inte DOS-lagen.</strong> Lagen om tillgänglighet till digital offentlig
+        service (DOS-lagen) gäller offentliga aktörers webbplatser och appar och tillsynas
+        av Digg. Den här guiden handlar om LPTT för privata e-handelstjänster mot konsument.
+      </p>
+    </section>
+
+    <section class="zones" aria-labelledby="datum-rubrik">
+      <h2 id="datum-rubrik">När började kraven gälla?</h2>
+      <p>
+        Ja — enligt officiella källor är startdatumet den <strong>28 juni 2025</strong>.
+      </p>
+      <ul>
+        <li>Lag (2023:254), övergångsbestämmelser punkt 1: lagen träder i kraft den 28 juni 2025.</li>
+        <li>PTS: lagen trädde i kraft 28 juni 2025; tillgänglighetskraven ska som huvudregel vara uppfyllda från det datumet.</li>
+        <li>Direktiv (EU) 2019/882 artikel 2: tjänster som tillhandahålls konsumenter efter den 28 juni 2025.</li>
+      </ul>
+      <p>
+        Det finns övergångsregler i lagens övergångsbestämmelser (bland annat visst äldre
+        webbinnehåll, vissa avtal och vissa produkter som redan användes för att leverera
+        tjänsten). Läs den aktuella lagtexten — den här sidan återger dem inte i detalj.
+      </p>
+    </section>
+
+    <section class="zones" aria-labelledby="vem-rubrik">
+      <h2 id="vem-rubrik">Vem omfattas — och mikroföretagsundantaget</h2>
+      <p>
+        PTS skriver att ni omfattas om ni tillhandahåller någon av de uppräknade
+        produkterna eller tjänsterna till konsumenter, och — som tjänsteleverantör —
+        inte är ett mikroföretag. I 2 § är mikroföretag ett företag med färre än tio
+        anställda och en årsomsättning eller årlig balansomslutning som inte överstiger
+        2 miljoner euro. Enligt 10 § behöver tjänster som tillhandahålls av mikroföretag
+        inte uppfylla tillgänglighetskraven.
+      </p>
+      <p>
+        Guiden är skriven för medelstora webbutiker som säljer till konsumenter. Om ni
+        har vuxit ur mikrodefinitionen är undantaget inte tillämpligt. Avgörandet är er
+        egen, mot lagtexten — inte mot den här sidan.
+      </p>
+    </section>
+
+    <section class="zones" aria-labelledby="ehandel-rubrik">
+      <h2 id="ehandel-rubrik">Särskilt för e-handelstjänster</h2>
+      <p>
+        Först ska de allmänna kraven uppfyllas, även för e-handeln. PTS och PTS
+        föreskrifter (PTSFS 2024:6) 8 § lyfter därutöver bland annat att e-handelstjänster ska:
+      </p>
+      <ol class="zone-list">
+        <li>
+          <span class="zone-code">1</span>
+          <span class="zone-name">Förmedla tillgänglighetsinformation</span>
+          <span class="zone-desc">Återge information om tillgängligheten för det som säljs, när sådan information tillhandahålls av ansvariga ekonomiska aktörer.</span>
+        </li>
+        <li>
+          <span class="zone-code">2</span>
+          <span class="zone-name">Fyra funktioner, fyra principer</span>
+          <span class="zone-desc">Identifiering, elektroniska signaturer, säkerhetsfunktioner och betalningsfunktioner ska vara uppfattningsbara, hanterbara, begripliga och robusta.</span>
+        </li>
+        <li>
+          <span class="zone-code">3</span>
+          <span class="zone-name">Även när funktionen ligger utanför sajten</span>
+          <span class="zone-desc">PTS: det måste finnas ett tillgängligt sätt att utföra de fyra funktionerna, även om de tillhandahålls separat.</span>
+        </li>
+        <li>
+          <span class="zone-code">4</span>
+          <span class="zone-name">Information om tjänsten</span>
+          <span class="zone-desc">Tjänsteleverantören ska enligt 25 § ta fram nödvändig information om hur tjänsten uppfyller tillgänglighetskraven, och se till att den följer med tjänsten.</span>
+        </li>
+      </ol>
+      <p>
+        24 § kräver att den som tillhandahåller tjänsten fortlöpande säkerställer att den
+        uppfyller kraven, och underrättar tillsynsmyndigheten vid brist.
+      </p>
+    </section>
+
+    <section class="prices" aria-labelledby="check-rubrik">
+      <h2 id="check-rubrik">Minimal självkontroll: startsida, produktsida, sök</h2>
+      <p>
+        Detta är en snabb, manuell genomgång för att hitta uppenbara hinder — inte
+        PTS-tillsyn, inte en WCAG-granskning och inte ett intyg om överensstämmelse.
+        Gå igenom er egen butik med tangentbord (Tab, Enter, Esc) och, om ni kan, en
+        skärmläsare.
+      </p>
+
+      <h3>Startsida</h3>
+      <ul class="check-list">
+        <li>
+          <strong>Går det att hoppa till innehållet?</strong>
+          En länk ”Hoppa till innehåll” som blir synlig vid tangentbordsfokus hjälper den
+          som inte använder mus.
+        </li>
+        <li>
+          <strong>Når ni meny, sök och varukorg med bara tangentbord?</strong>
+          PTS lyfter att gränssnitt som inte går att hantera med tangentbord drabbar den
+          som inte kan använda mus eller pekskärm. Syns fokusramen?
+        </li>
+        <li>
+          <strong>Har logotyp och kampanjbilder textalternativ?</strong>
+          Principen uppfattningsbar handlar bland annat om textalternativ till bilder.
+        </li>
+        <li>
+          <strong>Är det en tydlig h1 och en logisk rubrikordning?</strong>
+          Begriplighet: tydliga rubriker hjälper både skärmläsare och övriga användare.
+        </li>
+      </ul>
+
+      <h3>Produktsida</h3>
+      <ul class="check-list">
+        <li>
+          <strong>Står pris, variant och ”lägg i varukorg” som text — inte bara i bild?</strong>
+          Information som bara finns i en bild når inte skärmläsare.
+        </li>
+        <li>
+          <strong>Går köpknappen och variantväljaren att använda med tangentbord?</strong>
+          Anpassade knappar och dropdowns som bara reagerar på klick är ett vanligt hinder.
+        </li>
+        <li>
+          <strong>Har produktbilder ett textalternativ som beskriver det som säljs?</strong>
+          Tom alt-text på en dekorativ bild kan vara rätt; tom alt-text på den enda
+          produktbilden är det inte.
+        </li>
+        <li>
+          <strong>Förmedlas tillgänglighetsinformation om varan, om den finns?</strong>
+          PTS: om leverantören lämnar sådan information får e-handeln inte avstå från
+          att visa den.
+        </li>
+      </ul>
+
+      <h3>Sök</h3>
+      <ul class="check-list">
+        <li>
+          <strong>Har sökfältet en synlig etikett — inte bara platshållartext?</strong>
+          Platshållare som försvinner när användaren börjar skriva är svåra för många.
+        </li>
+        <li>
+          <strong>Går det att söka och läsa resultatet med tangentbord?</strong>
+          Autocomplete, filter och facetter måste gå att nå utan mus.
+        </li>
+        <li>
+          <strong>Meddelas nollträffar tydligt, i text?</strong>
+          En tom yta eller en ikon utan text når inte alla.
+        </li>
+      </ul>
+      <p class="source">
+        Checklistan är praktisk miniminivå, inte en återgivning av varje kriterium i
+        EN 301 549 eller WCAG. PTS beskriver att de fyra principerna på webb kan nås
+        via harmoniserade standarder (EN 301 549 bygger bland annat på WCAG 2.1-kriterier).
+        9 § ger presumtion om överensstämmelse när en harmoniserad standard faktiskt
+        täcker kravet. Det är inte samma sak som att den här sidan certifierar något.
+      </p>
+    </section>
+
+    <section class="zones" aria-labelledby="tillsyn-rubrik">
+      <h2 id="tillsyn-rubrik">Tillsyn — utan påhittade belopp</h2>
+      <p>
+        PTS är tillsynsmyndighet för e-handelstjänster, banktjänster och elektroniska
+        kommunikationstjänster, och marknadskontrollmyndighet för produkterna i lagen.
+        PTS kan granska enligt plan eller efter anmälan, begära uppgifter, uppmana till
+        rättelse och vidta ytterligare åtgärder.
+      </p>
+      <p>
+        Lagen ger utrymme för föreläggande, vite och sanktionsavgift (32–39 §).
+        Belopp och nivåer står i den aktuella lagtexten och beslutas i enskilda ärenden.
+        Den här sidan anger inga belopp.
+      </p>
+    </section>
+
+    <section class="zones" aria-labelledby="inte-rubrik">
+      <h2 id="inte-rubrik">Vad den här guiden inte är</h2>
+      <ul class="not-list">
+        <li><strong>Inte PTS och inte tillsyn.</strong> Sidan granskar inte er butik och företräder er inte mot PTS.</li>
+        <li><strong>Inte juridisk rådgivning.</strong> Om ni omfattas, vilka undantag som kan åberopas och vad som är tillräckligt i ert fall avgörs mot lagen — inte mot den här sammanfattningen.</li>
+        <li><strong>Inte full WCAG-certifiering.</strong> En självkontroll av tre sidtyper säger inte att webbplatsen uppfyller EN 301 549 eller någon WCAG-nivå.</li>
+        <li><strong>Inga påhittade sanktionsavgifter.</strong> Läs 37–39 § i lagtexten. Inga belopp återges här.</li>
+      </ul>
+    </section>
+
+    <section class="cta sources" aria-labelledby="kallor-rubrik">
+      <h2 id="kallor-rubrik">Källor (kontrollerade 3 september 2026)</h2>
+      <p>Primära källor — läs dem, inte bara den här sammanfattningen:</p>
+      <ul>
+        <li>
+          <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2023254-om-vissa-produkters-och-tjansters_sfs-2023-254/">
+            Lag (2023:254) om vissa produkters och tjänsters tillgänglighet
+          </a>
+          — särskilt 2 § (e-handelstjänster, mikroföretag), 4 § 7 (tillämpningsområde),
+          6 och 9–10 §, 24–26 §, 30 och 32–39 §, övergångsbestämmelser (ikraftträdande 28 juni 2025)
+        </li>
+        <li>
+          <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/forordning-2023676-om-vissa-produkters-och_sfs-2023-676/">
+            Förordning (2023:676) om vissa produkters och tjänsters tillgänglighet
+          </a>
+          — allmänna krav på tjänster, däribland de fyra principerna för webb och appar
+        </li>
+        <li>
+          <a href="https://pts.se/digital-inkludering/lagen-om-vissa-produkters-och-tjansters-tillganglighet/">
+            PTS: Lagen om vissa produkters och tjänsters tillgänglighet
+          </a>
+          (ikraftträdande 28 juni 2025, vad som omfattas, PTS tillsynsansvar för e-handel)
+        </li>
+        <li>
+          <a href="https://www.pts.se/digital-inkludering/lagkrav/introduktion-till-tillganglighetsdirektivet/">
+            PTS: Introduktion till tillgänglighetsdirektivet
+          </a>
+        </li>
+        <li>
+          <a href="https://pts.se/digital-inkludering/lagkrav/introduktion-till-tillganglighetsdirektivet/branschspecifika-krav/">
+            PTS: Branschspecifika krav — e-handelstjänster
+          </a>
+        </li>
+        <li>
+          <a href="https://www.pts.se/digital-inkludering/lagkrav/introduktion-till-tillganglighetsdirektivet/tillganglighetskrav/">
+            PTS: Tillgänglighetskrav
+          </a>
+          (fyra principer; EN 301 549 / WCAG som vägledning, inte som certifiering här)
+        </li>
+        <li>
+          <a href="https://pts.se/digital-inkludering/lagen-om-vissa-produkters-och-tjansters-tillganglighet/pts-tillsyn/">
+            PTS: Tillsyn av lagkraven
+          </a>
+        </li>
+        <li>
+          <a href="https://pts.se/regelbibliotek/foreskrifter-om-vissa-tjansters-tillganglighet/">
+            PTSFS 2024:6 om vissa tjänsters tillgänglighet
+          </a>
+          (ikraftträdande 28 juni 2025; 8 § e-handelstjänster)
+        </li>
+        <li>
+          <a href="https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=CELEX:32019L0882">
+            Direktiv (EU) 2019/882
+          </a>
+          — artikel 2 (tillämpning från 28 juni 2025, e-handelstjänster)
+        </li>
+        <li>
+          <a href="https://eur-lex.europa.eu/legal-content/SV/LSU/?uri=CELEX:32019L0882">
+            EUR-Lex: sammanfattning av direktiv (EU) 2019/882
+          </a>
+        </li>
+      </ul>
+      <p class="btn-note">
+        Denna guide sammanfattar källorna ovan men ersätter dem inte. Kontrollera alltid
+        den levande sidan hos PTS, riksdagen och EU innan ni agerar.
+      </p>
+    </section>
+
+    <p class="back-link"><a href="../index.html">← Tillbaka till elpris-se</a></p>
+  </main>
+
+  <footer>
+    <p><strong>Joel Smith</strong>, Sweden</p>
+    <p>Inte PTS. Inte tillsyn. Inte juridisk rådgivning. Inte WCAG-certifiering. Privat informationssida.</p>
+  </footer>
+</body>
+</html>
